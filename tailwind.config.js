@@ -24,7 +24,7 @@ module.exports = {
         "grayish-blue": "var(--grayish-blue)",
         "white": "var(--white)"
       }
-    },
+    }
   },
   variants: {
     extend: {},

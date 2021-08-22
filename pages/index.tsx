@@ -3,9 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Hero } from '../components/Hero'
 import { Menu } from '../components/Menu'
+import { TransformYourBrand } from '../components/TransformYourBrand'
 import SunnySideSvg from '../public/logo.svg'
-
 import EggImage from "../public/mobile/image-transform.jpg"
+import CupImage from '../public/mobile/image-stand-out.jpg'
+
 
 
 const Home: NextPage = () => {
@@ -30,16 +32,17 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <Image src={EggImage} alt="egg" />
+        <TransformYourBrand />
+        <Image src={CupImage} alt="cup" />
       </main>
 
 
 
-      Transform your brand
 
-      We are a full-service creative agency specializing in helping brands grow fast.
-      Engage your clients through compelling visuals that do most of the marketing for you.
 
-      Learn more
+
+
+
 
       Stand out to the right audience
 

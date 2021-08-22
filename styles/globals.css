@@ -17,3 +17,18 @@
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
 }
+
+.custom-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 0.6rem;
+  background-color: var(--yellow);
+  opacity: 20%;
+  width: 100%;
+  left: -5px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  padding-left: 5px;
+  padding-right: 5px;
+}
