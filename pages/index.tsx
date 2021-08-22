@@ -7,6 +7,7 @@ import { TransformYourBrand } from '../components/TransformYourBrand'
 import SunnySideSvg from '../public/logo.svg'
 import EggImage from "../public/mobile/image-transform.jpg"
 import CupImage from '../public/mobile/image-stand-out.jpg'
+import { StandOut } from '../components/StandOut'
 
 
 
@@ -34,21 +35,10 @@ const Home: NextPage = () => {
         <Image src={EggImage} alt="egg" />
         <TransformYourBrand />
         <Image src={CupImage} alt="cup" />
+        <StandOut />
       </main>
 
 
-
-
-
-
-
-
-
-      Stand out to the right audience
-
-      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
-
-      Learn more
 
       Graphic design
       Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
