@@ -5,6 +5,8 @@ import { Hero } from '../components/Hero'
 import { Menu } from '../components/Menu'
 import SunnySideSvg from '../public/logo.svg'
 
+import EggImage from "../public/mobile/image-transform.jpg"
+
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +29,7 @@ const Home: NextPage = () => {
 
       <main>
         <Hero />
+        <Image src={EggImage} alt="egg" />
       </main>
 
 
