@@ -1,12 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Hero } from '../components/Hero'
 import { Menu } from '../components/Menu'
 import SunnySideSvg from '../public/logo.svg'
 
+
 const Home: NextPage = () => {
   return (
-    <div className="bg-red-500 text-lg">
+    <div className="text-lg">
       <Head>
         <meta charSet="UTF-8" />
         <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -17,13 +19,17 @@ const Home: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className="relative flex justify-between p-5">
+      <header className="fixed flex justify-between p-5 z-[1000] w-full">
         <Image src={SunnySideSvg} alt="logo" />
 
         <Menu />
       </header>
 
-      We are creatives
+      <main>
+        <Hero />
+      </main>
+
+
 
       Transform your brand
 
