@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Menu } from '../components/Menu'
 import SunnySideSvg from '../public/logo.svg'
-
-import { Menu } from '@headlessui/react'
-import MenuSvg from '../public/menu.svg'
 
 const Home: NextPage = () => {
   return (
@@ -22,49 +20,7 @@ const Home: NextPage = () => {
       <header className="relative flex justify-between p-5">
         <Image src={SunnySideSvg} alt="logo" />
 
-        <Menu as="div">
-          <Menu.Button>
-            <Image src={MenuSvg} alt="menu" />
-          </Menu.Button>
-          <Menu.Items className="">
-            <div className="absolute right-0 origin-top-right w-full p-5 mt-4">
-              <div className="bg-white text-center p-4">
-                <div className="absolute h-0 w-0 right-5 top-0 origin-top-right inline-block border-white border-b-[25px] border-l-[25px] border-l-transparent"></div>
-                <Menu.Item>
-                  <div className="font-barlow text-dark-grayish-blue my-5">
-                    <a href="#">
-                      About
-                    </a>
-                  </div>
-                </Menu.Item>
-                <Menu.Item>
-                  <div className="font-barlow text-dark-grayish-blue my-5">
-                    <a href="#">
-                      Services
-                    </a>
-
-                  </div>
-                </Menu.Item>
-                <Menu.Item>
-                  <div className="font-barlow text-dark-grayish-blue my-5">
-                    <a href="#">
-                      Projects
-                    </a>
-
-                  </div>
-                </Menu.Item>
-                <Menu.Item>
-                  <div className="my-8">
-                    <a href="#" className="bg-yellow py-3 px-5 rounded-full text-black font-semibold font-fraunces" >
-                      CONTACT
-                    </a>
-
-                  </div>
-                </Menu.Item>
-              </div>
-            </div>
-          </Menu.Items>
-        </Menu>
+        <Menu />
       </header>
 
       We are creatives
