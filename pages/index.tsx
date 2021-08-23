@@ -8,6 +8,7 @@ import SunnySideSvg from '../public/logo.svg'
 import EggImage from "../public/mobile/image-transform.jpg"
 import CupImage from '../public/mobile/image-stand-out.jpg'
 import { StandOut } from '../components/StandOut'
+import { Cherry } from '../components/Cherry'
 
 
 
@@ -36,12 +37,12 @@ const Home: NextPage = () => {
         <TransformYourBrand />
         <Image src={CupImage} alt="cup" />
         <StandOut />
+        <Cherry />
       </main>
 
 
 
-      Graphic design
-      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      
 
       Photography
       Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
