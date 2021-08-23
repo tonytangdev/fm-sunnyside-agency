@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface Props {
@@ -23,7 +24,10 @@ export const TextSection = ({
                     {paragraph}
                 </p>
             </div>
-            <a href="/" className={`font-fraunces font-black text-base custom-link-${underlineColor} relative`}>LEARN MORE</a>
+            <Link href="/">
+                <a className={`font-fraunces font-black text-base custom-link-${underlineColor} relative`}>LEARN MORE
+                </a>
+            </Link>
         </div>
     )
 }

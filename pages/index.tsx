@@ -10,6 +10,7 @@ import CupImage from '../public/mobile/image-stand-out.jpg'
 import { StandOut } from '../components/StandOut'
 import { Cherry } from '../components/Cherry'
 import { Tangerine } from '../components/Tangerine'
+import Link from 'next/link'
 
 
 
@@ -21,9 +22,6 @@ const Home: NextPage = () => {
         <title>Frontend Mentor | Sunnyside agency landing page</title>
         <meta name="description" content="Frontend Mentor | Sunnyside agency landing page" />
         <link rel="icon" href="/favicon-32x32.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet" />
       </Head>
 
       <header className="fixed flex justify-between p-5 z-[1000] w-full">
@@ -35,26 +33,36 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <Image src={EggImage} alt="egg" />
-        <TransformYourBrand />
+        <section>
+          <TransformYourBrand />
+        </section>
         <Image src={CupImage} alt="cup" />
-        <StandOut />
-        <Cherry />
-        <Tangerine />
+        <section>
+          <StandOut />
+        </section>
+        <section>
+          <Cherry />
+        </section>
+        <section>
+          <Tangerine />
+        </section>
       </main>
 
-      Client testimonials
+      <section>
+        <h3>Client testimonials</h3>
 
-      We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-      Emily R.
-      Marketing Director
+        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        Emily R.
+        Marketing Director
 
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-      Thomas S.
-      Chief Operating Officer
+        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        Thomas S.
+        Chief Operating Officer
 
-      Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-      Jennie F.
-      Business Owner
+        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        Jennie F.
+        Business Owner
+      </section>
 
       About
       Services
@@ -62,8 +70,11 @@ const Home: NextPage = () => {
       Contact
 
       <div className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="/">TonyTangDev</a>.
+        Challenge by
+        <Link href="https://www.frontendmentor.io?ref=challenge">
+          <a>Frontend Mentor</a>
+        </Link>.
+        Coded by <Link href="/"><a>TonyTangDev</a></Link>.
       </div>
     </div>
   )
