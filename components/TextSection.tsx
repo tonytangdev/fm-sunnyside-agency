@@ -23,7 +23,7 @@ export const TextSection = ({
                     {paragraph}
                 </p>
             </div>
-            <a href="#" className={`font-fraunces font-black text-base custom-link-${underlineColor} relative`}>LEARN MORE</a>
+            <a href="/" className={`font-fraunces font-black text-base custom-link-${underlineColor} relative`}>LEARN MORE</a>
         </div>
     )
 }

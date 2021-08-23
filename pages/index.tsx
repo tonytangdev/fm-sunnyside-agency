@@ -9,6 +9,7 @@ import EggImage from "../public/mobile/image-transform.jpg"
 import CupImage from '../public/mobile/image-stand-out.jpg'
 import { StandOut } from '../components/StandOut'
 import { Cherry } from '../components/Cherry'
+import { Tangerine } from '../components/Tangerine'
 
 
 
@@ -38,14 +39,8 @@ const Home: NextPage = () => {
         <Image src={CupImage} alt="cup" />
         <StandOut />
         <Cherry />
+        <Tangerine />
       </main>
-
-
-
-      
-
-      Photography
-      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
 
       Client testimonials
 
@@ -68,7 +63,7 @@ const Home: NextPage = () => {
 
       <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">TonyTangDev</a>.
+        Coded by <a href="/">TonyTangDev</a>.
       </div>
     </div>
   )

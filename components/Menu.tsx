@@ -18,14 +18,14 @@ export const Menu = (props: Props) => {
                         <div className="absolute h-0 w-0 right-5 top-0 origin-top-right inline-block border-white border-b-[25px] border-l-[25px] border-l-transparent"></div>
                         <HeadlessMenu.Item>
                             <div className="font-barlow text-dark-grayish-blue my-5">
-                                <a href="#">
+                                <a href="/">
                                     About
                                 </a>
                             </div>
                         </HeadlessMenu.Item>
                         <HeadlessMenu.Item>
                             <div className="font-barlow text-dark-grayish-blue my-5">
-                                <a href="#">
+                                <a href="/">
                                     Services
                                 </a>
 
@@ -33,7 +33,7 @@ export const Menu = (props: Props) => {
                         </HeadlessMenu.Item>
                         <HeadlessMenu.Item>
                             <div className="font-barlow text-dark-grayish-blue my-5">
-                                <a href="#">
+                                <a href="/">
                                     Projects
                                 </a>
 
@@ -41,7 +41,7 @@ export const Menu = (props: Props) => {
                         </HeadlessMenu.Item>
                         <HeadlessMenu.Item>
                             <div className="my-8">
-                                <a href="#" className="bg-yellow py-3 px-5 rounded-full text-black font-semibold font-fraunces" >
+                                <a href="/" className="bg-yellow py-3 px-5 rounded-full text-black font-semibold font-fraunces" >
                                     CONTACT
                                 </a>
 
