@@ -11,6 +11,11 @@ import { StandOut } from '../components/StandOut'
 import { Cherry } from '../components/Cherry'
 import { Tangerine } from '../components/Tangerine'
 import Link from 'next/link'
+import { Testimonial } from '../components/Testimonial'
+
+import Profile1 from '../public/image-emily.jpg'
+import Profile2 from '../public/image-thomas.jpg'
+import Profile3 from '../public/image-jennie.jpg'
 
 
 
@@ -48,20 +53,30 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <section>
-        <h3>Client testimonials</h3>
+      <section className="px-8 py-14">
+        <h3 className="font-fraunces font-black tracking-[0.3em] text-center text-grayish-blue text-base mb-10">CLIENT TESTIMONIALS</h3>
 
-        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-        Emily R.
-        Marketing Director
+        <Testimonial
+          image={Profile1}
+          paragraph="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+          author="Emily R."
+          job="Marketing Director"
+        />
 
-        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-        Thomas S.
-        Chief Operating Officer
+        <Testimonial
+          image={Profile2}
+          paragraph="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
+          author="Thomas S."
+          job="Chief Operating Officer"
+        />
 
-        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        Jennie F.
-        Business Owner
+        <Testimonial
+          image={Profile3}
+          paragraph="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+          author="Jennie F."
+          job="Business Owner"
+        />
+
       </section>
 
       About
