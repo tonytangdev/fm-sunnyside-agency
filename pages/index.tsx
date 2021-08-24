@@ -12,10 +12,21 @@ import { Cherry } from '../components/Cherry'
 import { Tangerine } from '../components/Tangerine'
 import Link from 'next/link'
 import { Testimonial } from '../components/Testimonial'
+import HeaderImg from '../public/mobile/image-header.jpg'
 
 import Profile1 from '../public/image-emily.jpg'
 import Profile2 from '../public/image-thomas.jpg'
 import Profile3 from '../public/image-jennie.jpg'
+
+import MilkImage from '../public/mobile/image-gallery-milkbottles.jpg'
+import OrangeCutImage from '../public/mobile/image-gallery-orange.jpg'
+import IceConeImage from '../public/mobile/image-gallery-cone.jpg'
+import SugarImage from '../public/mobile/image-gallery-sugar-cubes.jpg'
+import { Logo } from '../components/Logo'
+import FacebookIcon from '../public/icon-facebook.svg'
+import InstagramIcon from '../public/icon-instagram.svg'
+import PinterestIcon from '../public/icon-pinterest.svg'
+import TwitterIcon from '../public/icon-twitter.svg'
 
 
 
@@ -79,18 +90,42 @@ const Home: NextPage = () => {
 
       </section>
 
-      About
-      Services
-      Projects
-      Contact
-
-      <div className="attribution">
-        Challenge by
-        <Link href="https://www.frontendmentor.io?ref=challenge">
-          <a>Frontend Mentor</a>
-        </Link>.
-        Coded by <Link href="/"><a>TonyTangDev</a></Link>.
+      <div className="grid grid-cols-2 grid-rows-2">
+        <Image src={MilkImage} alt="milk"></Image>
+        <Image src={OrangeCutImage} alt="orange cut in half"></Image>
+        <Image src={IceConeImage} alt="ice cone"></Image>
+        <Image src={SugarImage} alt="sugar"></Image>
       </div>
+
+      <footer className="bg-green flex items-center flex-col px-10 py-16">
+        <div className="w-48 mb-8">
+          <Logo viewBox="0 0 125 24" color="var(--very-dark-grayish-blue)" />
+        </div>
+        <div className="flex justify-between w-full font-barlow text-dark-grayish-blue mb-8">
+          <span>About</span>
+          <span>Services</span>
+          <span>Projects</span>
+        </div>
+        <div className="flex justify-around w-full font-barlow text-dark-grayish-blue mb-8">
+          <Image src={FacebookIcon} alt="facebook"></Image>
+          <Image src={InstagramIcon} alt="instagram"></Image>
+          <Image src={TwitterIcon} alt="twitter"></Image>
+          <Image src={PinterestIcon} alt="pinterest"></Image>
+        </div>
+      </footer>
+      <div className="attribution font-barlow p-10 bg-green">
+        <div>
+          Challenge by {" "}
+          <Link href="https://www.frontendmentor.io?ref=challenge">
+            <a className="underline">Frontend Mentor</a>
+          </Link>.
+        </div>
+        <div>
+          Coded by <Link href="https://github.com/tonytangdev"><a className="underline">TonyTangDev</a></Link>.
+        </div>
+      </div>
+
+
     </div>
   )
 }

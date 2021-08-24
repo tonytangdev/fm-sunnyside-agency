@@ -22,7 +22,8 @@ module.exports = {
         "very-dark-grayish-blue": "var(--very-dark-grayish-blue)",
         "dark-grayish-blue": "var(--dark-grayish-blue)",
         "grayish-blue": "var(--grayish-blue)",
-        "white": "var(--white)"
+        "white": "var(--white)",
+        "green": "var(--green)"
       }
     }
   },
