@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import HeaderImg from '../public/mobile/image-header.jpg'
+import HeaderImgMobile from '../public/mobile/image-header.jpg'
+import HeaderImgDesktop from '../public/desktop/image-header.jpg'
 import ArrowDownSvg from '../public/icon-arrow-down.svg'
 
 interface Props {
@@ -17,8 +18,12 @@ export const Hero = (props: Props) => {
                     <Image className="cursor-pointer" src={ArrowDownSvg} alt="arrow down" onClick={() => console.log('Orange')} />
                 </div>
             </div>
-
-            <Image src={HeaderImg} alt="orange image" />
+            <div className="flex md:hidden">
+                <Image src={HeaderImgMobile} alt="orange image" />
+            </div>
+            <div className="hidden md:flex">
+                <Image src={HeaderImgDesktop} alt="orange image" />
+            </div>
         </div>
     )
 }
