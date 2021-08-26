@@ -53,56 +53,63 @@ const Home: NextPage = () => {
 
       <main>
         <Hero />
-        <div className="flex md:hidden">
-          <Image src={EggImageMobile} alt="egg" />
-        </div>
-        <div className="hidden md:flex">
-          <Image src={EggImageDesktop} alt="egg" />
-        </div>
-        <section>
-          <TransformYourBrand />
-        </section>
-        <div className="flex md:hidden">
-          <Image src={CupImageMobile} alt="cup" />
-        </div>
-        <div className="hidden md:flex">
-          <Image src={CupImageDesktop} alt="cup" />
-        </div>
+        <div className="md:grid md:grid-cols-2 md:grid-col-">
+          <div className="md:col-start-2 md:row-start-1">
+            <div className="flex md:hidden">
+              <Image src={EggImageMobile} alt="egg" />
+            </div>
+            <div className="hidden md:flex">
+              <Image src={EggImageDesktop} alt="egg"  />
+            </div>
+          </div>
+          <section className="md:col-start-0 md:flex items-center">
+            <TransformYourBrand />
+          </section>
+          <div>
+            <div className="flex md:hidden">
+              <Image src={CupImageMobile} alt="cup" />
+            </div>
+            <div className="hidden md:flex">
+              <Image src={CupImageDesktop} alt="cup" />
+            </div>
+          </div>
 
-        <section>
-          <StandOut />
-        </section>
-        <section>
-          <Cherry />
-        </section>
-        <section>
-          <Tangerine />
-        </section>
+          <section className="md:col-start-0 md:flex items-center">
+            <StandOut />
+          </section>
+          <section>
+            <Cherry />
+          </section>
+          <section>
+            <Tangerine />
+          </section>
+        </div>
       </main>
 
       <section className="px-8 py-14">
         <h3 className="font-fraunces font-black tracking-[0.3em] text-center text-grayish-blue text-base mb-10">CLIENT TESTIMONIALS</h3>
+        <div className="md:grid md:grid-cols-3 md:gap-5 md:items-center">
+          <Testimonial
+            image={Profile1}
+            paragraph="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+            author="Emily R."
+            job="Marketing Director"
+          />
 
-        <Testimonial
-          image={Profile1}
-          paragraph="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
-          author="Emily R."
-          job="Marketing Director"
-        />
+          <Testimonial
+            image={Profile2}
+            paragraph="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
+            author="Thomas S."
+            job="Chief Operating Officer"
+          />
 
-        <Testimonial
-          image={Profile2}
-          paragraph="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
-          author="Thomas S."
-          job="Chief Operating Officer"
-        />
-
-        <Testimonial
-          image={Profile3}
-          paragraph="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
-          author="Jennie F."
-          job="Business Owner"
-        />
+          <Testimonial
+            image={Profile3}
+            paragraph="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+            author="Jennie F."
+            job="Business Owner"
+          />
+        </div>
 
       </section>
 

@@ -13,13 +13,15 @@ export const TextWithImage = ({
     title
 }: Props) => {
     return (
-        <div className="relative flex">
+        <div className="relative grid">
             <Image src={image} alt="cherry"></Image>
-            <div className="absolute bottom-0 text-center mb-16">
-                <h2 className="font-fraunces font-black text-3xl text-very-dark-grayish-blue mb-10">{title}</h2>
-                <p className="font-barlow px-4 text-base text-very-dark-grayish-blue">
-                    {paragraph}
-                </p>
+            <div className="absolute top-[60%] origin-top text-center flex flex-col w-full justify-center">
+                <h2 className="font-fraunces font-black text-3xl text-very-dark-grayish-blue mb-10 md:mb-5 md:text-2xl">{title}</h2>
+                <div className="">
+                    <p className="font-barlow px-4 text-base text-very-dark-grayish-blue w-full md:text-sm">
+                        {paragraph}
+                    </p>
+                </div>
             </div>
         </div>
     )

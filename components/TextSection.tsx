@@ -13,7 +13,7 @@ export const TextSection = ({
     underlineColor
 }: Props) => {
     return (
-        <div className="p-5 text-center flex flex-col items-center mb-9">
+        <div className="p-5 text-center flex flex-col items-center mb-9 md:mb-0 md:text-left md:items-start md:px-20">
             <div className="w-[80%] mb-5">
                 <h2 className="font-fraunces font-black text-2xl text-very-dark-desaturated-blue">
                     {title}
