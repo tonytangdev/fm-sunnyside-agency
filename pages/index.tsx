@@ -59,7 +59,7 @@ const Home: NextPage = () => {
               <Image src={EggImageMobile} alt="egg" />
             </div>
             <div className="hidden md:flex">
-              <Image src={EggImageDesktop} alt="egg"  />
+              <Image src={EggImageDesktop} alt="egg" />
             </div>
           </div>
           <section className="md:col-start-0 md:flex items-center">
@@ -86,23 +86,22 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <section className="px-8 py-14">
-        <h3 className="font-fraunces font-black tracking-[0.3em] text-center text-grayish-blue text-base mb-10">CLIENT TESTIMONIALS</h3>
+      <section className="px-8 py-14 md:px-32 md:py-28">
+        <h3 className="font-fraunces font-black tracking-[0.3em] text-center text-grayish-blue text-base mb-10 md:mb-20">CLIENT TESTIMONIALS</h3>
         <div className="md:grid md:grid-cols-3 md:gap-5 md:items-center">
+
           <Testimonial
             image={Profile1}
             paragraph="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
             author="Emily R."
             job="Marketing Director"
           />
-
           <Testimonial
             image={Profile2}
             paragraph="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
             author="Thomas S."
             job="Chief Operating Officer"
           />
-
           <Testimonial
             image={Profile3}
             paragraph="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
@@ -113,7 +112,7 @@ const Home: NextPage = () => {
 
       </section>
 
-      <div className="grid grid-cols-2 grid-rows-2">
+      <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1">
         <div className="flex md:hidden">
           <Image src={MilkImageMobile} alt="milk"></Image>
         </div>
@@ -147,16 +146,16 @@ const Home: NextPage = () => {
         <div className="w-48 mb-8">
           <Logo viewBox="0 0 125 24" color="var(--very-dark-grayish-blue)" />
         </div>
-        <div className="flex justify-between w-full font-barlow text-dark-grayish-blue mb-8">
-          <span>About</span>
-          <span>Services</span>
-          <span>Projects</span>
+        <div className="flex justify-between w-full font-barlow text-dark-grayish-blue mb-8 md:max-w-md md:mb-20">
+          <Link href="#"><a>About</a></Link>
+          <Link href="#"><a>Services</a></Link>
+          <Link href="#"><a>Projects</a></Link>
         </div>
-        <div className="flex justify-around w-full font-barlow text-dark-grayish-blue mb-8">
-          <Image src={FacebookIcon} alt="facebook"></Image>
-          <Image src={InstagramIcon} alt="instagram"></Image>
-          <Image src={TwitterIcon} alt="twitter"></Image>
-          <Image src={PinterestIcon} alt="pinterest"></Image>
+        <div className="flex justify-around w-full font-barlow text-dark-grayish-blue mb-8 md:max-w-sm">
+          <Image src={FacebookIcon} alt="facebook" className="cursor-pointer"></Image>
+          <Image src={InstagramIcon} alt="instagram" className="cursor-pointer"></Image>
+          <Image src={TwitterIcon} alt="twitter" className="cursor-pointer"></Image>
+          <Image src={PinterestIcon} alt="pinterest" className="cursor-pointer"></Image>
         </div>
       </footer>
       <div className="attribution font-barlow p-10 bg-green">
