@@ -9,8 +9,8 @@ interface Props {
 
 export const Menu = (props: Props) => {
     return (
-        <nav className="flex-1">
-            <div className="hidden md:flex justify-end gap-10">
+        <nav className="md:flex-1">
+            <div className="hidden md:flex justify-end gap-10 md:items-center">
                 <div className="font-barlow text-white">
                     <Link href="/">
                         <a>
@@ -32,9 +32,9 @@ export const Menu = (props: Props) => {
                         </a>
                     </Link>
                 </div>
-                <div className="">
+                <div className="bg-yellow py-3 px-5 rounded-full text-black md:hover:bg-[rgb(255,255,255,0.3)] md:bg-white cursor-pointer md:hover:text-white">
                     <Link href="/">
-                        <a className="bg-yellow py-3 px-5 rounded-full text-black font-semibold font-fraunces md:bg-white md:text-black" >
+                        <a className="font-semibold font-fraunces" >
                             CONTACT
                         </a>
                     </Link>
