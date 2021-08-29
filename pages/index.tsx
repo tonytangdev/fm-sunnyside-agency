@@ -45,7 +45,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
-      <header className="fixed flex justify-between p-5 z-[1000] w-full">
+      <header className="fixed flex justify-between p-5 z-[1000] w-full md:pt-10">
         <Image src={SunnySideSvg} alt="logo" />
 
         <Menu />
@@ -147,9 +147,9 @@ const Home: NextPage = () => {
           <Logo viewBox="0 0 125 24" color="var(--very-dark-grayish-blue)" />
         </div>
         <div className="flex justify-between w-full font-barlow text-dark-grayish-blue mb-8 md:max-w-md md:mb-20">
-          <Link href="#"><a>About</a></Link>
-          <Link href="#"><a>Services</a></Link>
-          <Link href="#"><a>Projects</a></Link>
+          <Link href="/"><a>About</a></Link>
+          <Link href="/"><a>Services</a></Link>
+          <Link href="/"><a>Projects</a></Link>
         </div>
         <div className="flex justify-around w-full font-barlow text-dark-grayish-blue mb-8 md:max-w-sm">
           <Image src={FacebookIcon} alt="facebook" className="cursor-pointer"></Image>
